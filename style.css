@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+.calculator {
+    border: 1px solid darkorchid;
+    border-radius: 5px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.calculator-input {
+    width: 100%;
+    font-size: 4rem;
+    height: 70px;
+    border: none;
+    background-image: url("https://media.istockphoto.com/id/1159964730/tr/vekt%C3%B6r/bulut-deseni-arka-plan%C4%B1.jpg?s=1024x1024&w=is&k=20&c=DktaBbwVaY9VBNmnRSnjpm6dpnUu8x2fhnlm3u9prCo=") ;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ 
+button
+{
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 3px;
+    border: 1px solid #777;
+    background-color: transparent;
+    font-size: 3rem;
+    color: rgb(185, 96, 185);
+    font-size: 35px;
+    font-weight: 550;
+
+}
+  
+  button:hover {
+    background-color: rgb(187, 187, 191);
+  }
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px
+
+}
+
+.operator {
+   color: rgb(137, 9, 137);
+}
+
+.clear {
+    background-color: rgb(177, 64, 64) ;
+    color: #be9393;
+}
+
+.clear:hover {
+    background-color: rgb(230, 46, 46);
+}
+
+.equal-sign:hover {
+    background-color: rgb(22, 129, 22);
+}
+
+.equal-sign {
+    background-color: rgb(75, 146, 75);
+    color: #be9393;
+    grid-area: 2/4/6/5;
+    height: 100%;
+}
